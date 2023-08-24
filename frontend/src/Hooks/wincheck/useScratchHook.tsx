@@ -44,7 +44,7 @@ function useScratchHook(imageSrc: string, isOpen: boolean) {
     const y = e.clientY - top;
 
     ctx.beginPath();
-    ctx.moveTo(x, y);
+    ctx.moveTo(x + 15, y + 15);
     ctx.lineTo(x, y);
     ctx.closePath();
     ctx.stroke();

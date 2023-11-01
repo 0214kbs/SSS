@@ -26,83 +26,141 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
 
 ## 3. 💡 주요 기능
 
-### 회원가입/ 로그인 페이지
+### 설문 목록 
+<table width="100%">
+  <tr>
+    <td width="25%">메인 페이지</td>
+    <td width="25%">즉시 응답 리스트</td>
+    <td width="25%">일반 응답 리스트</td>
+    <td width="25%">설문 디테일 페이지</td>
+  </tr>
+  <tr>
+    <td width="25%"> <img src="Image/images/메인페이지 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/즉시응답 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/일반응답 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/디테일페이지 1.png" width="100%" /></td>
+  </tr>
+  <tr>
+    <td width="25%">
+      <ul>
+        <li> 마감 임박 설문, 응답 시간 짧은 설문, 즉시 당첨 설문의 목록을 볼 수 있음</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li> 일반 설문, 즉시 당첨 설문의 목록을 볼 수 있음</li>
+        <li> 추천순, 확률순, 마감순으로 정렬 가능</li>
+      </ul>
+    </td>
+    <td></td>
+    <td>
+       <ul>
+        <li> 설문에 대한 정보와 링크 공유 가능</li>
+        <li> 실시간 당첨자/응답자 로그 확인 가능 </li>
+      </ul>
+    </td>
+    
+  </tr>
+</table>
 
-> 회원가입 기능
+### 설문 응답
+<table width="100%">
+  <tr>
+    <td  width="15%"> 설문 응답 페이지 </td>
+    <td width="50%"><img src="Image/images/설문응답페이지 1.png" /></td>
+    <td width="35%">
+      <ul>
+       <li> 설문 응답 </li>
+      </ul>
+    </td>
+  </tr>
+    <tr>
+    <td  width="15%"> 실시간 당첨 결과 </td>
+    <td width="50%"><img src="Image/images/즉시당첨페이지 1.png" /></td>
+    <td width="35%">
+      <ul>
+       <li> 즉시당첨 type의 경우, 즉시 당첨 여부 확인 </li>
+       <li> 복권 긁는 animation </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-- 회원가입을 할 수 있습니다.
-![회원가입](/Image/signup.png)
 
+### 설문 제작
+<table width="100%">
+  <tr>
+    <td  width="15%"> 설문 제작 페이지 </td>
+    <td width="50%"><img src="Image/images/설문제작 1.png" /></td>
+    <td width="35%">
+      <ul>
+       <li>  설문의 대상, 타입 기간을 설정 </li>
+       <li>  객관식, 단답형, 시간, 날짜 등 여러 타입의 질문 제작 가능 </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-### 메인 페이지
-
-> 설문 목록 보기
-
-- 일반 설문, 즉시 당첨 설문의 목록을 볼 수 있습니다.
-![메인 페이지](/Image/mainPage.png) 
-
-### 설문 목록 페이지
-
-> 목록 보기
-
-- 모든 설문 목록을 볼 수 있는 페이지입니다.
-![일반 페이지](/Image/normal.png)
-
-### 설문 제작 페이지
-
-> 설문 설정
-
-- 설문의 대상, 타입 기간을 설정할 수 있는 페이지입니다.
-![설문 설정 페이지](/Image/surveySet.png)
-
-> 설문 제작
-
-- 여러 타입을 질문을 제작할 수 있는 페이지입니다.
-![설문 제작 페이지](/Image/makesurvey.png)
-
-> 결제
-
-- 설문 제작 시 제공할 리워드를 결제하는 페이지입니다.
-![설문 제작 페이지](/Image/payment.png)
-
-### 설문 응답 페이지
-
-> 설문 디테일
-
-- 설문에 대한 정보 및 실시간 당첨자 로그를 볼 수 있는 페이지 입니다
-![설문 디테일 페이지](/Image/surveyDetail.png)
-
-> 설문 응답
-
-- 설문에 대한 응답을 할 수 있는 페이지입니다.
-![설문 응답 페이지](/Image/surveyAnswer.png)
-
-> 실시간 당첨 결과
-
-- 설문 제출 완료 후 실시간으로 당첨여부를 확인할 수 있는 페이지입니다.
-![설문 결과 페이지](/Image/surveyResult.png)
- 
 ### 마이 페이지
+- 회원정보 수정, 만든 설문, 응답한 설문, 당첨된 상품을 확인할 수 있는 페이지
+<table width="100%">
+  <tr>
+    <td  width="15%"> 만든/응답한 설문 </td>
+    <td width="50%"><img src="Image/images/통계페이지.png" width="100%" /></td>
+    <td width="35%">
+      <ul>
+       <li>  만든 설문, 응답한 설문 목록 확인 가능 </li>
+       <li>  만든 설문 카드 클릭시 통계, 결제 정보 확인 가능 </li>
+        <li> 응답한 설문 카드 클릭시, 설문 디테일 페이지처럼 설문 정보 확인 가능</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td  width="15%"> 당첨된 상품 </td>
+    <td width="50%"><img src="Image/images/마이페이지3 1.png" width="100%" /></td>
+    <td width="35%">
+      <ul>
+       <li>  당첨된 상품 목록 </li>
+       <li>  당첨 여부를 확인하지 않은 설문은 - 회색 카드  </li>
+        <li> 회색 카드 클릭 시 복권 긁기로 당첨 여부 확인 </li>
+      </ul>
+    </td>
+  </tr>
+    <tr>
+    <td  width="15%"> 통계 페이지 </td>
+    <td width="50%"><img src="Image/images/통계페이지 1.png" width="100%" /></td>
+    <td width="35%">
+      <ul>
+       <li>  제작한 설문에 대한 응답의 통계 확인 가능 </li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-> 마이 페이지
+### 모바일 
+<table width="100%">
+  <tr>
+    <td width="25%">메인 페이지</td>
+    <td width="25%">디테일(타임어택)</td>
+    <td width="25%">디테일(즉시당첨)</td>
+  </tr>
+  <tr>
+    <td width="25%"> <img src="Image/images/모바일메인페이지 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/모바일디테일 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/모바일 타임어택 1.png" width="100%" /></td>
+  </tr>
 
-- 회원정보 수정, 만든 설문, 응답한 설문, 당첨된 상품을 확인할 수 있는 페이지입니다.
-![마이 페이지](/Image/myPage.png)
-
-### 통계 페이지
-
-> 통계 페이지
-
-- 제작한 설문에 대한 응답의 통계를 확인할 수 있는 페이지 입니다.
-![통계 페이지](/Image/statistics.png)
-
-### 결제 정보 확인 페이지
-
-> 결제 정보 확인 페이지
-- 설문 응답 시 제공할 리워드를 결제한 후 결제 정보를 확인할 수 있는 페이지
-![결제 확인 페이지](/Image/paymentResult.png)
-
-
+  <tr>
+    <td width="25%">응답 페이지</td>
+    <td width="25%">즉시 당첨 확인 페이지</td>
+    <td width="25%">마이페이지</td>
+  </tr>
+  <tr>
+    <td width="25%"> <img src="Image/images/모바일응답 1.png" width="100%" /></td>
+        <td width="25%"> <img src="Image/images/모바일당첨 1.png" width="100%" /></td>
+    <td width="25%"> <img src="Image/images/모바일마이페이지 1.png" width="100%" /></td>
+  </tr>
+</table>
 ## 4. ⚙️ 기술 스택
 
 ### 사용 기술 스택

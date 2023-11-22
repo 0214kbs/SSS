@@ -14,7 +14,29 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
 저희는 제작한 설문에 대해 랜덤 알고리즘을 이용하여 당첨자를 추출하도록 하였습니다. 그리고 실시간 로그를 이용하여 당첨자를 투명하게 공개함으로써 모두가 당첨자를 확인할 수 있도록 하였습니다.
 <br>
 
-## 3. 💡 주요 기능
+## 3. ⚙️ 기술 스택
+### 프론트엔드
+<div>
+  <img src="https://img.shields.io/badge/Next.js v13.4.8-000000?style=6DB33quare&logo=nextdotjs&logoColor=#000000"/>
+  <img src="https://img.shields.io/badge/React v18.2.0-61DAFB?style=6DB33quare&logo=React&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Typescript v5.1.6-3178C6?style=6DB33quare&logo=Typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Node.js v16.20.1-339933?style=6DB33quare&logo=Node.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/styled component v6.0.8-DB7093?style=6DB33quare&logo=styledcomponents&logoColor=white"/>
+  <img src="https://img.shields.io/badge/zustand v4.4.1-AD29B6?style=6DB33quare&logo=&logoColor=white"/>
+</div>
+<div>
+  <img src="https://img.shields.io/badge/Prettier v3.0.0-F7B93E?style=6DB33quare&logo=Prettier&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Eslint v8.2.0-4B32C3?style=6DB33quare&logo=eslint&logoColor=white"/>
+</div>
+
+### 백엔드
+<div>
+  <img src="https://img.shields.io/badge/Spring Boot v3.1.1-6DB33F?style=6DB33quare&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL v8.1.0-4479A1?style=6DB33quare&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis v3.1.2-DC382D?style=6DB33quare&logo=redis&logoColor=white"/>
+</div>
+
+## 4. 💡 주요 기능
 
 ### 설문 목록
 
@@ -156,42 +178,6 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
   </tr>
 </table>
 
-## 4. ⚙️ 기술 스택
-
-### 프론트엔드
-
-#### 사용 기술 스택
-
-| Next.js(v13.4.8) | React(v18.2.0) | TypeScript(v5.1.6) | Node(v16.20.1) |
-| :--------------: | :------------: | :----------------: | :------------: |
-|    ![nextjs]     |    ![react]    |       ![ts]        |    ![node]     |
-
-| styled-component(v6.0.8) |          zustand(v4.4.1)          |
-| :----------------------: | :-------------------------------: |
-|          ![sc]           | ![zustand](/Image/stack/bear.jpg) |
-
-#### 개발 환경
-
-| Eslint(v8.2.0) | Prettier(v3.0.0) |
-| :------------: | :--------------: |
-|   ![eslint]    |   ![prettier]    |
-
-### 백엔드
-
-| Spring Boot(v3.1.1) | MySQL(v8.1) | redis(v3.1.2) |
-| :-----------------: | :---------: | :-----------: |
-|        ![sb]        |  ![MySQL]   |   ![redis]    |
-
-[nextjs]: /Image/stack/nextjs.svg
-[ts]: /Image/stack/typescript.svg
-[react]: /Image/stack/react.svg
-[node]: /Image/stack/node.svg
-[eslint]: /Image/stack/eslint.svg
-[prettier]: /Image/stack/prettier-color.svg
-[sc]: /Image/stack/styledcomponents-color.svg
-[sb]: /Image/stack/springboot-color.svg
-[MySQL]: /Image/stack/mysql-color.svg
-[redis]: /Image/stack/redis-color.svg
 
 ## 5. 📝 참고사항
 

@@ -1,32 +1,23 @@
 # SSS(Special Survey Service)
 
-
 ## 1. 💻 Developer
 
-<div align="center">
-<table>
-  <tr>
-    <td align="center"><br /><p><b>박슬빈</b></p></<small>🍀 Back-End Developer</small></td>
-    <td align="center"><br /><p><b>최연재</b></p></<small>🍀 Back-End Developer</small></td>
-    <td align="center"><br /><p><b>권선근</b></p></<small>🍀 Back-End Developer</small></td>
-  </tr> 
-  <tr>
-    <td align="center"><br /><p><b>곽보선</b></p></<small>🍀 Front-End Developer</small></td>
-    <td align="center"><br /><p><b>전대현</b></p></<small>🍀 Front-End Developer</small></td>
-    <td align="center"><br /><p><b>신종혁</b></p></<small>🍀 Front-End Developer</small></td>
-  </tr>
-</table>
-</div>
+|   **Name**   | 박슬빈👑 |  곽보선  | 권선근  |  신종혁  |  전대현  | 최연재  |
+| :----------: | :------: | :------: | :-----: | :------: | :------: | :-----: |
+| **Position** | BackEnd  | FrontEnd | BackEnd | FrontEnd | FrontEnd | BackEnd |
+
 <br>
 
 ## 2. ✍️ 서비스 소개
+
 SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서비스입니다.
 저희는 제작한 설문에 대해 랜덤 알고리즘을 이용하여 당첨자를 추출하도록 하였습니다. 그리고 실시간 로그를 이용하여 당첨자를 투명하게 공개함으로써 모두가 당첨자를 확인할 수 있도록 하였습니다.
 <br>
 
 ## 3. 💡 주요 기능
 
-### 설문 목록 
+### 설문 목록
+
 <table width="100%">
   <tr>
     <td width="25%">메인 페이지</td>
@@ -64,6 +55,7 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
 </table>
 
 ### 설문 응답
+
 <table width="100%">
   <tr>
     <td  width="15%"> 설문 응답 페이지 </td>
@@ -86,8 +78,8 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
   </tr>
 </table>
 
-
 ### 설문 제작
+
 <table width="100%">
   <tr>
     <td  width="15%"> 설문 제작 페이지 </td>
@@ -102,6 +94,7 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
 </table>
 
 ### 마이 페이지
+
 - 회원정보 수정, 만든 설문, 응답한 설문, 당첨된 상품을 확인할 수 있는 페이지
 <table width="100%">
   <tr>
@@ -137,7 +130,8 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
   </tr>
 </table>
 
-### 모바일 
+### 모바일
+
 <table width="100%">
   <tr>
     <td width="25%">메인 페이지</td>
@@ -161,25 +155,32 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
     <td width="25%"> <img src="Image/images/모바일마이페이지 1.png" width="100%" /></td>
   </tr>
 </table>
+
 ## 4. ⚙️ 기술 스택
 
-### 사용 기술 스택
+### 프론트엔드
 
-| Next.js(v13.4.8) | React(v18.2.0) | TypeScript(v5.1.6) | Node(v16.20.1) | styled-component(v6.0.2) | zustand(v4.3.9) |
-| :--------------: | :------------: | :----------------: | :------------: | :----------------------: | :-------------: |
-|    ![nextjs]     |    ![react]    |        ![ts]       |     ![node]    |           ![sc]          |                 |
+#### 사용 기술 스택
 
+| Next.js(v13.4.8) | React(v18.2.0) | TypeScript(v5.1.6) | Node(v16.20.1) |
+| :--------------: | :------------: | :----------------: | :------------: |
+|    ![nextjs]     |    ![react]    |       ![ts]        |    ![node]     |
 
-| Spring Boot(v3.1.1) | MySQL(v8.1) | redis(v3.1.2) | 
+| styled-component(v6.0.8) |          zustand(v4.4.1)          |
+| :----------------------: | :-------------------------------: |
+|          ![sc]           | ![zustand](/Image/stack/bear.jpg) |
+
+#### 개발 환경
+
+| Eslint(v8.2.0) | Prettier(v3.0.0) |
+| :------------: | :--------------: |
+|   ![eslint]    |   ![prettier]    |
+
+### 백엔드
+
+| Spring Boot(v3.1.1) | MySQL(v8.1) | redis(v3.1.2) |
 | :-----------------: | :---------: | :-----------: |
-|        ![sb]        |   ![MySQL]  |    ![redis]   |
-
-### 개발 환경
-
-|  Eslint(v8.2.0)   | Prettier(v3.0.0) |
-| :---------------: | :--------------: |
-|     ![eslint]     |    ![prettier]   |
-
+|        ![sb]        |  ![MySQL]   |   ![redis]    |
 
 [nextjs]: /Image/stack/nextjs.svg
 [ts]: /Image/stack/typescript.svg
@@ -192,10 +193,12 @@ SSS는 설문조사 후 투명하고 공정하게 리워드를 지급받는 서�
 [MySQL]: /Image/stack/mysql-color.svg
 [redis]: /Image/stack/redis-color.svg
 
-
 ## 5. 📝 참고사항
+
 1. 즉시당첨 설문
+
 - 설문이 끝난 즉시 바로 리워드 당첨 여부를 확인할 수 있다.
 
 2. 일반 설문
+
 - 일반설문은 설문이 끝난 후 추첨번호를 부여받으며 설문이 마감된 후 번호를 추첨하는 알고리즘을 통해 당첨자를 선정하는 방식이며, 마감 기한이 24시간이 남으면 설문 타입명이 일반설문에서 타임어택으로 바뀐다.

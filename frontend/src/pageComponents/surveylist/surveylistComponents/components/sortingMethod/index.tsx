@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyledSortingMethodList } from "./SortingMethod.styled";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 import { useSortTypeStore } from "@/stores/surveylist/useSortTypeStore";
 
 const buttonType = [

@@ -1,6 +1,6 @@
-"use client";
-import Input from "@/components/input";
-import Button from "@/components/button";
+'use client';
+import Input from '@/components/common/input';
+import Button from '@/components/common/button';
 import {
   DuplicationBox,
   InputBox,
@@ -11,15 +11,15 @@ import {
   PasswordCondition,
   DuplicationButton,
   InputButtonBox,
-} from "./Signup.styled";
-import { useSignupHook } from "@/Hooks/user/useSignupHook";
-import InputBoxItem from "./components/InputBox";
+} from './Signup.styled';
+import { useSignupHook } from '@/Hooks/user/useSignupHook';
+import InputBoxItem from './components/InputBox';
 
 const Signup = () => {
   const inputArr = [
-    { title: "비밀번호 확인", type: "password", name: "password2" },
-    { title: "이름", type: "text", name: "name" },
-    { title: "생년월일", type: "date", name: "birthday" },
+    { title: '비밀번호 확인', type: 'password', name: 'password2' },
+    { title: '이름', type: 'text', name: 'name' },
+    { title: '생년월일', type: 'date', name: 'birthday' },
   ];
   const {
     user,
@@ -43,8 +43,8 @@ const Signup = () => {
             <InputButtonBox>
               <Input type="email" name="email" inputState={isCert.email} onChange={changeUserValue} />
             </InputButtonBox>
-            <DuplicationButton disabled={isCert.email === "true"} type="button" iscert={isCert.email} onClick={duplicationEmail}>
-              {isCert.email === "true" ? "인증완료" : "중복확인"}
+            <DuplicationButton disabled={isCert.email === 'true'} type="button" iscert={isCert.email} onClick={duplicationEmail}>
+              {isCert.email === 'true' ? '인증완료' : '중복확인'}
             </DuplicationButton>
           </DuplicationBox>
         </InputBoxItem>
@@ -52,9 +52,9 @@ const Signup = () => {
         <InputBoxItem title="휴대폰 번호">
           <DuplicationBox>
             <InputButtonBox>
-              <Input type="tel" name="phoneNumber" disabled={isCert.tel === "true"} inputState={isCert.tel} onChange={changeUserValue} />
+              <Input type="tel" name="phoneNumber" disabled={isCert.tel === 'true'} inputState={isCert.tel} onChange={changeUserValue} />
             </InputButtonBox>
-            {isCert.tel === "true" ? (
+            {isCert.tel === 'true' ? (
               <DuplicationButton type="button" iscert={isCert.tel} onClick={SendCertNum}>
                 인증번호 발송
               </DuplicationButton>
@@ -66,14 +66,14 @@ const Signup = () => {
           </DuplicationBox>
         </InputBoxItem>
 
-        {isCert.tel === "true" && (
+        {isCert.tel === 'true' && (
           <InputBoxItem title="인증번호">
             <DuplicationBox>
               <InputButtonBox>
                 <Input type="text" name="certNum" onChange={changeUserValue} />
               </InputButtonBox>
-              <DuplicationButton type="button" disabled={isCert.certNum === "true"} iscert={isCert.certNum} onClick={Certification}>
-                {isCert.certNum === "true" ? "인증완료" : "인증하기"}
+              <DuplicationButton type="button" disabled={isCert.certNum === 'true'} iscert={isCert.certNum} onClick={Certification}>
+                {isCert.certNum === 'true' ? '인증완료' : '인증하기'}
               </DuplicationButton>
             </DuplicationBox>
           </InputBoxItem>
@@ -103,7 +103,7 @@ const Signup = () => {
           </InputRadioBox>
         </InputBoxItem>
 
-        <div style={{ height: "48px", width: "410px", marginTop: "10px", marginLeft: "10px" }}>
+        <div style={{ height: '48px', width: '410px', marginTop: '10px', marginLeft: '10px' }}>
           <Button use="SignUpLogin" label="회원가입" type="submit" />
         </div>
       </SignUpContainer>

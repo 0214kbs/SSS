@@ -2,7 +2,7 @@ import React from "react";
 import { StyledContent, StyledContentText } from "./Instantwin.styled";
 import CardList from "../cardlist";
 import Image from "next/image";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 import { useRouter } from "next/navigation";
 import useInstantHook from "@/Hooks/mainpage/useInstantHook";
 import { useSurveylistStore } from "@/stores/surveylist/useSurveylistStore";

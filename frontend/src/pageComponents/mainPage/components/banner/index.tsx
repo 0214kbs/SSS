@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyledBanner, StyledBannerBox, StyledBannerText } from "./Banner.styled";
-import Button from '@/components/button';
+import Button from '@/components/common/button';
 import { useRouter } from "next/navigation";
 
 const Banner = () => {

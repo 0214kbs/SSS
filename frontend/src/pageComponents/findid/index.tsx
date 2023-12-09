@@ -1,10 +1,10 @@
-"use client";
-import Input from "@/components/input";
-import Button from "@/components/button";
-import { FindIdPage, FindIdTitle, InputBox, LoginContainer } from "./FindId.styled";
-import { SignUpText, SignUpItem } from "../signup/Signup.styled";
-import findIdPost from "@/api/user/findIdPost";
-import { useRouter } from "next/navigation";
+'use client';
+import Input from '@/components/common/input';
+import Button from '@/components/common/button';
+import { FindIdPage, FindIdTitle, InputBox, LoginContainer } from './FindId.styled';
+import { SignUpText, SignUpItem } from '../signup/Signup.styled';
+import findIdPost from '@/api/user/findIdPost';
+import { useRouter } from 'next/navigation';
 
 const FindId = () => {
   const router = useRouter();
@@ -14,7 +14,7 @@ const FindId = () => {
     const phoneNumber = e.target.phoneNumber.value;
     const res = await findIdPost(phoneNumber);
     if (!res.success) {
-      alert("아이디가 존재하지 않습니다.");
+      alert('아이디가 존재하지 않습니다.');
       return;
     }
     alert(`가입 하신 이메일은 ${res.response.email} 입니다.`);
@@ -32,7 +32,7 @@ const FindId = () => {
           </InputBox>
         </SignUpItem>
 
-        <div style={{ height: "48px", width: "410px", marginTop: "10px", marginLeft: "10px" }}>
+        <div style={{ height: '48px', width: '410px', marginTop: '10px', marginLeft: '10px' }}>
           <Button use="SignUpLogin" label="아이디 찾기" type="submit"></Button>
         </div>
       </LoginContainer>

@@ -1,6 +1,6 @@
 "use client";
 import { StyledTitleBox, StyledBox, StyledWinBox } from "./Mywincheck";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 import { useRouter } from "next/navigation";
 import useScratchHook from "@/Hooks/wincheck/useScratchHook";
 import { useEffect, useState } from "react";

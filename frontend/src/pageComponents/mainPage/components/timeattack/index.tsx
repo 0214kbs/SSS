@@ -3,7 +3,7 @@ import { StyledContent, StyledContentText, StyledCardList } from "./Timeattack.s
 import Image from "next/image";
 import useTimeattackHook from "@/Hooks/mainpage/useTimeattackHook";
 import useMovelistHook from "@/Hooks/mainpage/useMovelistHook";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 import { useRouter } from "next/navigation";
 import CardList from "./timeAttackCardList";
 import { useSurveylistStore } from "@/stores/surveylist/useSurveylistStore";

@@ -1,6 +1,6 @@
 "use client";
 import { StyledTitleBox, StyledBox, StyledWinBox } from "./Wincheck";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 import { useRouter } from "next/navigation";
 import useScratchHook from "@/Hooks/wincheck/useScratchHook";
 import instantwinCheckGet from "@/api/win/instantwinCheckGet";

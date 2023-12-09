@@ -1,6 +1,6 @@
 import { ModalType } from "./Modal.type";
 import { StyledBox, StyledModal, StyledTitleBox, StyledWinBox } from "./Modal.styled";
-import Button from "../../../../../components/button";
+import Button from "../../../../../components/common/button";
 import useScratchHook from "@/Hooks/wincheck/useScratchHook";
 
 const Modal = (props: ModalType) => {

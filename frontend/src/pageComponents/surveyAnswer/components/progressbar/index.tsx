@@ -1,10 +1,10 @@
-"use client";
-import { useEffect, useState } from "react";
-import { ProgressContainer, ProgressBar, ProgressBarPercentage } from "./ProgressBar.styeld";
-import useSurveyAnswerStore from "@/stores/useSurveyAnswer";
-import surveyPost from "@/api/surveyAnswer/surveyPost";
-import { useRouter } from "next/navigation";
-import Modal from "@/components/modal";
+'use client';
+import { useEffect, useState } from 'react';
+import { ProgressContainer, ProgressBar, ProgressBarPercentage } from './ProgressBar.styeld';
+import useSurveyAnswerStore from '@/stores/useSurveyAnswer';
+import surveyPost from '@/api/surveyAnswer/surveyPost';
+import { useRouter } from 'next/navigation';
+import Modal from '@/components/common/modal';
 
 interface propsType {
   id: any;
@@ -53,17 +53,16 @@ const ProgressBarComponent = (props: propsType) => {
   // modal
   const [showModal, setShowModal] = useState(false);
 
-
   const submitAnswer = async () => {
     if (percentage === 100) {
       const answers = [...answer, ...checkBoxAnswer, ...dateAnswer, ...timeAnswer];
 
       const res = await surveyPost(answers, props.id);
       if (res?.data.success === true) {
-        if (props.type === "NORMAL") {
-          router.push("/");
+        if (props.type === 'NORMAL') {
+          router.push('/');
         } else {
-          router.push("/instantwincheck/" + props.id);
+          router.push('/instantwincheck/' + props.id);
         }
       } else if (res?.data.success === false) {
         alert(res.data.apiError.message);
@@ -75,13 +74,12 @@ const ProgressBarComponent = (props: propsType) => {
     if (percentage === 100) {
       setShowModal(true);
     }
-  }
+  };
   return (
     <div>
-
       <ProgressContainer onClick={onModal}>
-        <ProgressBar type={props.type} width={percentage} ></ProgressBar>
-        <ProgressBarPercentage width={percentage}>{percentage === 100 ? "제출" : `${viewPercentage}%`}</ProgressBarPercentage>
+        <ProgressBar type={props.type} width={percentage}></ProgressBar>
+        <ProgressBarPercentage width={percentage}>{percentage === 100 ? '제출' : `${viewPercentage}%`}</ProgressBarPercentage>
       </ProgressContainer>
       <Modal
         isOpen={showModal}
@@ -90,7 +88,7 @@ const ProgressBarComponent = (props: propsType) => {
         confirm="제출"
         onClose={() => setShowModal(false)}
         onConfirmClick={submitAnswer}
-        contenttype={props.type === "NORMAL" ? "NORMAL" : "INSTANT_WIN"}
+        contenttype={props.type === 'NORMAL' ? 'NORMAL' : 'INSTANT_WIN'}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { ButtonStyles } from "./Button.type";
+
 const StyledButton = styled.button.attrs<ButtonStyles>((props) => ({}))`
   ${(props) => {
     const gender = props.checkgender || null;

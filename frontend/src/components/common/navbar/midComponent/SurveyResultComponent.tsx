@@ -2,7 +2,7 @@
 import React from "react";
 import { StyledText, StyledMidComp, StyledTitleInput } from "../Navbar.styled";
 import Image from "next/image";
-import Button from "@/components/button";
+import Button from "@/components/common/button";
 
 const SurveyResultComponent = (props: any) => {
     const pathname = props.pathname;

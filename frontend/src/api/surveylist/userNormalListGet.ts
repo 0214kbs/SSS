@@ -1,9 +1,9 @@
-import api from "../api";
-import normalListGet from "./normalListGet";
+import api from '../api';
+import normalListGet from './normalListGet';
 
 const userNormalListGet = async (accessToken: any) => {
   try {
-    const response = await api.get("/survey/recommend/normal/user", {
+    const response = await api.get('/survey/recommend/normal/user', {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -15,8 +15,8 @@ const userNormalListGet = async (accessToken: any) => {
       return data;
     }
   } catch (error) {
-    console.error("Error: ", error);
-    throw error;
+    console.error('Error: ', error);
+    return [];
   }
 };
 

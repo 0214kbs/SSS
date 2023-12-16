@@ -1,9 +1,9 @@
-import api from "../api";
-import instantListGet from "./instantListGet";
+import api from '../api';
+import instantListGet from './instantListGet';
 
 const userInstantListGet = async (accessToken: any) => {
   try {
-    const response = await api.get("/survey/recommend/instant/user", {
+    const response = await api.get('/survey/recommend/instant/user', {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -15,8 +15,8 @@ const userInstantListGet = async (accessToken: any) => {
       return data;
     }
   } catch (error) {
-    console.error("Error: ", error);
-    throw error;
+    console.error('Error: ', error);
+    return [];
   }
 };
 

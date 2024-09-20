@@ -1,9 +1,9 @@
-import api from "../api";
-import timeListGet from "./timeListGet";
+import api from '../api';
+import timeListGet from './timeListGet';
 
 const userTimeListGet = async (accessToken: any) => {
   try {
-    const response = await api.get("/survey/recommend/time/user", {
+    const response = await api.get('/survey/recommend/time/user', {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -15,8 +15,8 @@ const userTimeListGet = async (accessToken: any) => {
       return data;
     }
   } catch (error) {
-    console.error("Error: ", error);
-    throw error;
+    console.error('Error: ', error);
+    return [];
   }
 };
 
